@@ -5,12 +5,12 @@ import { evaluateFormula, getInfoFromDropData, stripPar } from '../utils.js'
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class CairnActorSheet extends ActorSheet {
+export class PlerionActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["cairn", "sheet", "actor"],
-      template: "systems/cairn/templates/actor/actor-sheet.html",
+      classes: ["plerion", "sheet", "actor"],
+      template: "systems/plerion/templates/actor/actor-sheet.html",
       width: 550,
       height: 640,
       tabs: [
@@ -20,12 +20,12 @@ export class CairnActorSheet extends ActorSheet {
           initial: "items",
         },
       ],
-      dragDrop: [{ dragSelector: ".cairn-items-list-row", dropSelector: null }],
+      dragDrop: [{ dragSelector: ".plerion-items-list-row", dropSelector: null }],
     });
   }
 
   get template() {
-    const path = "systems/cairn/templates/actor";
+    const path = "systems/plerion/templates/actor";
     return `${path}/${this.actor.type}-sheet.html`;
   }
 
@@ -67,7 +67,7 @@ export class CairnActorSheet extends ActorSheet {
 
     // Update inventory item
     html.find(".item-edit").click((ev) => {
-      const li = $(ev.currentTarget).parents(".cairn-items-list-row");
+      const li = $(ev.currentTarget).parents(".plerion-items-list-row");
       if (li.data("isContainer")) {
         const item = this.actor.getOwnedContainer(li.data("itemId"));
         item.sheet.render(true);
@@ -79,7 +79,7 @@ export class CairnActorSheet extends ActorSheet {
 
     // Delete inventory item
     html.find(".item-delete").click((ev) => {
-      const li = $(ev.currentTarget).parents(".cairn-items-list-row");
+      const li = $(ev.currentTarget).parents(".plerion-items-list-row");
       if (li.data("isContainer")) {
         this.actor.deleteOwnedContainer(li.data("itemId"));
       } else {
@@ -89,13 +89,13 @@ export class CairnActorSheet extends ActorSheet {
     });
 
     html.find(".item-toggle-equipped").click((ev) => {
-      const li = $(ev.currentTarget).parents(".cairn-items-list-row");
+      const li = $(ev.currentTarget).parents(".plerion-items-list-row");
       const item = this.actor.getOwnedItem(li.data("itemId"));
       item.update({ 'system.equipped': !item.system.equipped });
     });
 
     html.find(".item-add-quantity").click((ev) => {
-      const li = $(ev.currentTarget).parents(".cairn-items-list-row");
+      const li = $(ev.currentTarget).parents(".plerion-items-list-row");
       const item = this.actor.getOwnedItem(li.data("itemId"));
       if (item.system.weightless) {
         item.update({ 'system.quantity': item.system.quantity + 1 });
@@ -105,7 +105,7 @@ export class CairnActorSheet extends ActorSheet {
     });
 
     html.find(".item-remove-quantity").click((ev) => {
-      const li = $(ev.currentTarget).parents(".cairn-items-list-row");
+      const li = $(ev.currentTarget).parents(".plerion-items-list-row");
       const item = this.actor.getOwnedItem(li.data("itemId"));
       if (item.system.weightless) {
         item.update({ 'system.quantity': Math.max(item.system.quantity - 1, 0) });
@@ -145,7 +145,7 @@ export class CairnActorSheet extends ActorSheet {
     });
 
     html
-      .find(".cairn-item-title")
+      .find(".plerion-item-title")
       .click((event) => this._onItemDescriptionToggle(event));
 
     html.find("#die-of-fate-button").click(async () => {
@@ -167,7 +167,7 @@ export class CairnActorSheet extends ActorSheet {
    */
   async _onItemCreate(event) {
     event.preventDefault();
-    const template = "systems/cairn/templates/dialog/add-item-dialog.html";
+    const template = "systems/plerion/templates/dialog/add-item-dialog.html";
     const content = await renderTemplate(template);
 
     new Dialog({
@@ -200,7 +200,7 @@ export class CairnActorSheet extends ActorSheet {
    */
   async _onContainerCreate(event) {
     event.preventDefault();
-    const template = "systems/cairn/templates/dialog/add-container-dialog.html";
+    const template = "systems/plerion/templates/dialog/add-container-dialog.html";
     const content = await renderTemplate(template);
 
     new Dialog({
@@ -274,7 +274,7 @@ export class CairnActorSheet extends ActorSheet {
     const element = event.currentTarget;
     const dataset = element.dataset;
     if (dataset.roll) {
-      const usePanic = game.settings.get("cairn", "use-panic");
+      const usePanic = game.settings.get("plerion", "use-panic");
       let panicLabel = "";
       if (usePanic && this.actor.system.panicked) {
         dataset.roll = "1d4"; // panicked character
@@ -308,14 +308,14 @@ export class CairnActorSheet extends ActorSheet {
   }
 
   _buildDamageRollMessage(label, targetIds) {
-    const rollMessageTpl = 'systems/cairn/templates/chat/dmg-roll-card.html';
+    const rollMessageTpl = 'systems/plerion/templates/chat/dmg-roll-card.html';
     const tplData = { label: label, targets: targetIds };
     return renderTemplate(rollMessageTpl, tplData);
   }
 
   _onItemDescriptionToggle(event) {
     event.preventDefault();
-    const boxItem = $(event.currentTarget).parents(".cairn-items-list-row");
+    const boxItem = $(event.currentTarget).parents(".plerion-items-list-row");
     const isContainer = boxItem.data("isContainer");
     if (isContainer) {
       this._prepareContainerDescription(boxItem);

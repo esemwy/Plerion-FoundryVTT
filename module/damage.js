@@ -165,7 +165,7 @@ export class Damage {
     }
 
     static async _rollScarsTable(damage) {
-        const table = await findCompendiumItem("cairn.utils", "Scars");
+        const table = await findCompendiumItem("plerion.utils", "Scars");
         const roll = new Roll(damage.toString());
         await table.draw({ roll });
     }

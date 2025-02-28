@@ -1,20 +1,20 @@
 {
-  "id": "cairn",
-  "title": "Cairn",
-  "description": "Cairn for FoundryVTT",
-  "version": "0.14",
+  "id": "plerion",
+  "title": "Plerion",
+  "description": "Plerion for FoundryVTT",
+  "version": "0.01",
   "compatibility": {
     "minimum": "12",
     "verified": "12.327"
   },
   "license": "LICENSE.txt",
-  "url": "https://github.com/yochaigal/Cairn-FoundryVTT/",
-  "manifest": "https://github.com/yochaigal/Cairn-FoundryVTT/releases/latest/download/system.json",
-  "download": "https://github.com/yochaigal/Cairn-FoundryVTT/releases/latest/download/system.zip",
+  "url": "https://github.com/esemwy/Plerion-FoundryVTT/",
+  "manifest": "https://github.com/esemwy/Plerion-FoundryVTT/releases/latest/download/system.json",
+  "download": "https://github.com/esemwy/Plerion-FoundryVTT/releases/latest/download/system.zip",
   "authors": [
     {
-      "name": "yochaigal",
-      "url": "https://yochaigal.itch.io/"
+      "name": "esemwy",
+      "url": "https://github.com/esemwy"
     },
     {
       "name": "Oskar Świda",
@@ -22,10 +22,10 @@
     }
   ],
   "esmodules": [
-    "module/cairn.js"
+    "module/plerion.js"
   ],
   "styles": [
-    "css/cairn.css"
+    "css/plerion.css"
   ],
   "packs": [
     {
@@ -33,96 +33,110 @@
       "label": "Armor",
       "path": "packs/armor.db",
       "type": "Item",
-      "system": "cairn"
+      "system": "plerion"
     },
     {
       "name": "character-traits",
       "label": "Character Traits",
       "path": "packs/character-traits.db",
       "type": "RollTable",
-      "system": "cairn"
+      "system": "plerion"
+    },
+    {
+      "name": "psionic-traits",
+      "label": "Psionic Traits",
+      "path": "packs/psionic-traits.db",
+      "type": "RollTable",
+      "system": "plerion"
     },
     {
       "name": "expeditionary-gear",
       "label": "Expeditionary Gear",
       "path": "packs/expeditionary-gear.db",
       "type": "Item",
-      "system": "cairn"
+      "system": "plerion"
     },
     {
       "name": "extra",
       "label": "Extra",
       "path": "packs/extra.db",
       "type": "Item",
-      "system": "cairn"
+      "system": "plerion"
     },
     {
       "name": "gear-tables",
       "label": "Gear Tables",
       "path": "packs/gear-tables.db",
       "type": "RollTable",
-      "system": "cairn"
+      "system": "plerion"
     },
     {
       "name": "character-creation-tables-srd",
       "label": "Character Creation Tables - SRD",
       "path": "packs/character-creation-tables-srd.db",
       "type": "RollTable",
-      "system": "cairn"
+      "system": "plerion"
     },
     {
       "name": "utils",
       "label": "Utils",
       "path": "packs/utils.db",
       "type": "RollTable",
-      "system": "cairn"
+      "system": "plerion"
     },
     {
       "name": "monsters",
       "label": "Monsters",
       "path": "packs/monsters.db",
       "type": "Actor",
-      "system": "cairn"
+      "system": "plerion"
     },
     {
-      "name": "spellbooks",
-      "label": "Spellbooks",
-      "path": "packs/spellbooks.db",
-      "type": "Item",
-      "system": "cairn"
+      "name": "vehicles",
+      "label": "Vehicles",
+      "path": "packs/vehicles.db",
+      "type": "Actor",
+      "system": "plerion"
     },
     {
-      "name": "more-spellbooks",
-      "label": "More Spellbooks",
-      "path": "packs/more-spellbooks.db",
+      "name": "psionics",
+      "label": "Psionics",
+      "path": "packs/psionics.db",
       "type": "Item",
-      "system": "cairn"
+      "system": "plerion"
+    },
+    {
+      "name": "cybernetics",
+      "label": "Cybernetics",
+      "path": "packs/cybernetics.db",
+      "type": "Item",
+      "system": "plerion"
     },
     {
       "name": "tools",
       "label": "Tools",
       "path": "packs/tools.db",
       "type": "Item",
-      "system": "cairn"
+      "system": "plerion"
     },
     {
       "name": "trinkets",
       "label": "Trinkets",
       "path": "packs/trinkets.db",
       "type": "Item",
-      "system": "cairn"
+      "system": "plerion"
     },
     {
       "name": "weapons",
       "label": "Weapons",
       "path": "packs/weapons.db",
       "type": "Item",
-      "system": "cairn"
+      "system": "plerion"
     }
   ],
   "packFolders": [
     {
-      "name": "Cairn - Items",
+      "name": "Plerion - Items",
       "sorting": "a",
       "packs": [
         "weapons",
@@ -131,20 +145,28 @@
         "tools",
         "expeditionary-gear",
         "extra",
-        "spellbooks",
-        "more-spellbooks",
-        "character-traits"
+        "psionics",
+        "cybernetics",
+        "character-traits",
+        "psionic-traits"
       ]
     },
     {
-      "name": "Cairn - Actors",
+      "name": "Plerion - Actors",
       "sorting": "a",
       "packs": [
         "monsters"
       ]
     },
     {
-      "name": "Cairn - Tables",
+      "name": "Plerion - Vehicles",
+      "sorting": "a",
+      "packs": [
+        "vehicles"
+      ]
+    },
+    {
+      "name": "Plerion - Tables",
       "sorting": "a",
       "packs": [
         "character-creation-tables-srd",

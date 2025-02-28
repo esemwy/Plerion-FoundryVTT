@@ -3,9 +3,30 @@
     "types": [
       "character",
       "npc",
-      "container"
+      "container",
+      "vehicle"
     ],
     "templates": {
+      "vehicleBase": {
+        "hull": {
+          "value": 6,
+          "max": 6
+        },
+        "abilities": {
+          "INT": {
+            "value": 10,
+            "max": 10
+          },
+          "ENG": {
+            "value": 10,
+            "max": 10
+          },
+          "SYS": {
+            "value": 10,
+            "max": 10
+          }
+        }
+      },
       "actorBase": {
         "hp": {
           "value": 6,
@@ -26,6 +47,18 @@
           }
         }
       }
+    },
+    "vehicle": {
+      "templates": [
+        "base",
+        "vehicleBase"
+      ],
+      "size": "medium",
+      "type": "starship",
+      "armor": 0,
+      "overloaded": 0,
+      "description": "",
+      "modules": []
     },
     "character": {
       "templates": [
@@ -111,7 +144,13 @@
       ],
       "armor": 1
     },
-    "spellbook": {
+    "psionics": {
+      "templates": [
+        "base",
+        "universal"
+      ]
+    },
+    "cybernetics": {
       "templates": [
         "base",
         "universal"

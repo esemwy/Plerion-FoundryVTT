@@ -19,18 +19,18 @@
  * General style.                                                             * 
  ******************************************************************************/
 
-.cairn.sheet.actor,
-.cairn.sheet.item {
+.plerion.sheet.actor,
+.plerion.sheet.item {
     min-height: 480px;
     min-width: 480px;
 }
 
-.cairn .window-content {
+.plerion .window-content {
     background-color: #f5f5f5;
     background-image: none;
 }
 
-.cairn .editor {
+.plerion .editor {
     height: 100%;
 }
 
@@ -325,11 +325,11 @@
  * Tabs.                                                                      * 
  ******************************************************************************/
 
-.cairn .tabs {
+.plerion .tabs {
     display: flex;
 }
 
-.cairn .tabs a {
+.plerion .tabs a {
     border-bottom: 2px solid black;
     border-top: 2px solid black;
     flex-grow: 1;
@@ -339,7 +339,7 @@
     line-height: 32px;
 }
 
-.cairn .tab {
+.plerion .tab {
     height: 100%;
 }
 
@@ -347,7 +347,7 @@
  * Items list.                                                                * 
  ******************************************************************************/
 
-.cairn-items-list-header {
+.plerion-items-list-header {
     border-bottom: 1px solid #b5b3a4;
     display: flex;
     font-family: "Alegreya", Times, "Times New Roman", Georgia, serif !important;
@@ -357,27 +357,27 @@
     height: 36px;
 }
 
-.cairn-items-list-header .end {
+.plerion-items-list-header .end {
     margin-left: auto;
 }
 
-.cairn-items-list-row {
+.plerion-items-list-row {
     border-bottom: 1px solid #b5b3a4;
 }
 
-.cairn-items-list-row-header {
+.plerion-items-list-row-header {
     display: flex;
     justify-content: space-between;
 }
 
-.cairn-item-name-and-tags {
+.plerion-item-name-and-tags {
     display: flex;
     line-height: 26px;
     height: 26px;
     gap: 4px;
 }
 
-.cairn-item-tag {
+.plerion-item-tag {
     align-self: center;
     background: rgba(0, 0, 0, 0.05);
     border: 1px solid #999;
@@ -389,22 +389,22 @@
     height: 18px;
 }
 
-.cairn-item-uses i {
+.plerion-item-uses i {
     font-size: 10px;
 }
 
-.cairn-item-controls {
+.plerion-item-controls {
     display: flex;
     height: 26px;
 }
 
-.cairn-item-controls a {
+.plerion-item-controls a {
     text-align: center;
     width: 18px;
 }
 
-.cairn-item-name-and-tags .fas,
-.cairn-item-controls .fas {
+.plerion-item-name-and-tags .fas,
+.plerion-item-controls .fas {
     line-height: 26px;
 }
 

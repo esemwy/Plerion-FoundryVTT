@@ -1,47 +1,47 @@
 // Import Modules
-import { CairnActor } from './actor/actor.js'
-import { CairnActorSheet } from './actor/actor-sheet.js'
-import { CairnItem } from './item/item.js'
-import { CairnItemSheet } from './item/item-sheet.js'
+import { PlerionActor } from './actor/actor.js'
+import { PlerionActorSheet } from './actor/actor-sheet.js'
+import { PlerionItem } from './item/item.js'
+import { PlerionItemSheet } from './item/item-sheet.js'
 import { createCharacter } from './character-generator.js'
 import * as characterGenerator from "./character-generator.js"
-import { Cairn } from './config.js'
-import { CairnCombat } from './combat.js'
-import { createCairnMacro, rollItemMacro } from './macros.js'
+import { Plerion } from './config.js'
+import { PlerionCombat } from './combat.js'
+import { createPlerionMacro, rollItemMacro } from './macros.js'
 import { Damage } from './damage.js'
 import { registerSettings } from "./settings.js"
 
 Hooks.once('init', async function () {
-  game.cairn = {
-    CairnActor,
-    CairnItem,
-    config: Cairn,
+  game.plerion = {
+    PlerionActor,
+    PlerionItem,
+    config: Plerion,
     characterGenerator: characterGenerator,
     rollItemMacro
   }
 
   // Define custom Entity classes
-  CONFIG.Actor.documentClass = CairnActor;
-  CONFIG.Item.documentClass = CairnItem;
+  CONFIG.Actor.documentClass = PlerionActor;
+  CONFIG.Item.documentClass = PlerionItem;
 
   // configure combat
-  CONFIG.Combat.documentClass = CairnCombat;
+  CONFIG.Combat.documentClass = PlerionCombat;
   CONFIG.Combat.initiative = {
     formula: "1d20",
   };
 
   // Register sheet application classes
   Actors.unregisterSheet('core', ActorSheet);
-  Actors.registerSheet('cairn', CairnActorSheet, { makeDefault: true });
+  Actors.registerSheet('plerion', PlerionActorSheet, { makeDefault: true });
   Items.unregisterSheet('core', ItemSheet);
-  Items.registerSheet('cairn', CairnItemSheet, { makeDefault: true });
+  Items.registerSheet('plerion', PlerionItemSheet, { makeDefault: true });
 
   registerSettings();
   configureHandleBar();
 });
 
 Hooks.once("ready", () => {
-  Hooks.on("hotbarDrop", (bar, data, slot) => createCairnMacro(data, slot));
+  Hooks.on("hotbarDrop", (bar, data, slot) => createPlerionMacro(data, slot));
 });
 
 Hooks.on("renderActorDirectory", (app, html) => {
@@ -93,8 +93,8 @@ Hooks.on("renderChatMessage", (message, html, data) => {
 const configureHandleBar = () => {
   // Pre-load templates
   const templatePaths = [
-    "systems/cairn/templates/parts/items-list.html",
-    "systems/cairn/templates/parts/container-list.html",
+    "systems/plerion/templates/parts/items-list.html",
+    "systems/plerion/templates/parts/container-list.html",
   ];
 
   loadTemplates(templatePaths);

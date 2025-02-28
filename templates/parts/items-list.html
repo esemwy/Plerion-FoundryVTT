@@ -1,5 +1,5 @@
 {{#if withFatigue}}
-<div class="cairn-items-list-header">
+<div class="plerion-items-list-header">
     {{#if data.system.hasGoldThreshold}}
       <div class="grey-comment">{{ localize 'CAIRN.Settings.UseGoldThreshold.message'}} ({{data.system.goldSlots}})</div>
     {{/if}}
@@ -10,45 +10,45 @@
     </div>
 </div>
 {{/if}}
-<div class="cairn-items-list-header">
+<div class="plerion-items-list-header">
     <div>{{ localize 'CAIRN.Name' }} <i>{{ localize 'CAIRN.BoldMeanEquipped' }}</i></div>
     <a class="item-control item-create" title="{{ localize 'CAIRN.CreateItem' }}" data-type="item"><i class="fas fa-plus"></i>&nbsp;{{ localize 'CAIRN.AddItem' }}</a>
 </div>
 {{#each data.items as |item id|}}
-<div class="cairn-items-list-row" data-item-id="{{item._id}}">
-    <div class="cairn-items-list-row-header">
-        <div class="cairn-item-name-and-tags">
-            <a class="cairn-item-title">
+<div class="plerion-items-list-row" data-item-id="{{item._id}}">
+    <div class="plerion-items-list-row-header">
+        <div class="plerion-item-name-and-tags">
+            <a class="plerion-item-title">
                 {{#markItemUsed item}}
                 {{#boldIf item.system.equipped}}{{item.name}}{{/boldIf}}
                 {{/markItemUsed}}
             </a>
             {{#if item.system.blast}}
-            <div class="cairn-item-tag">{{ localize 'CAIRN.Blast' }}</div>
+            <div class="plerion-item-tag">{{ localize 'CAIRN.Blast' }}</div>
             {{/if}}
             {{#if item.system.armor}}
-            <span class="cairn-item-tag">{{ localize 'CAIRN.Armor' }} {{item.system.armor}}</span>
+            <span class="plerion-item-tag">{{ localize 'CAIRN.Armor' }} {{item.system.armor}}</span>
             {{/if}}
             {{#if item.system.damageFormula}}
-            <div class="cairn-item-tag">{{item.system.damageFormula}} {{ localize 'CAIRN.Damage' }}</div>
+            <div class="plerion-item-tag">{{item.system.damageFormula}} {{ localize 'CAIRN.Damage' }}</div>
             {{/if}}
             {{#if item.system.bulky}}
-            <div class="cairn-item-tag">{{ localize 'CAIRN.Bulky' }}</div>
+            <div class="plerion-item-tag">{{ localize 'CAIRN.Bulky' }}</div>
             {{/if}}
             {{#if item.system.criticalDamage}}
-            <div class="cairn-item-tag">{{ localize 'CAIRN.CriticalDamage' }}</div>
+            <div class="plerion-item-tag">{{ localize 'CAIRN.CriticalDamage' }}</div>
             {{/if}}
             {{#if item.system.weightless}}
-            <div class="cairn-item-tag">{{ localize 'CAIRN.Weightless' }} {{item.system.quantity}} </div>
+            <div class="plerion-item-tag">{{ localize 'CAIRN.Weightless' }} {{item.system.quantity}} </div>
             {{else}}
             {{#if (gt item.system.quantity 1)}}
-            <div class="cairn-item-tag">{{ localize 'CAIRN.Quantity' }} {{item.system.quantity}} </div>  
+            <div class="plerion-item-tag">{{ localize 'CAIRN.Quantity' }} {{item.system.quantity}} </div>  
             {{/if}}
             {{/if}}
             
 
             {{#unless item.system.weightless}}
-            <div class="cairn-item-uses">
+            <div class="plerion-item-uses">
               {{#times item.system.uses.max}}
                 {{#if (gt item.system.uses.value @index)}}
                   <i class="fa-solid fa-circle"></i>
@@ -61,7 +61,7 @@
 
         </div>
         
-        <div class="cairn-item-controls">
+        <div class="plerion-item-controls">
             {{#if item.system.hasPlusMinus}}                        
               <a class="item-control item-remove-quantity" title="{{localize 'CAIRN.ItemRemoveQuantity'}}" style="margin-right: 4px">
                 <i class="fas fa-minus"></i>

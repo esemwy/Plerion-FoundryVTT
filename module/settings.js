@@ -1,5 +1,5 @@
 export const registerSettings = () => {
-    game.settings.register("cairn", "max-equip-slots", {
+    game.settings.register("plerion", "max-equip-slots", {
         name: game.i18n.localize("CAIRN.Settings.MaxEquipSlots.label"),
         hint: game.i18n.localize("CAIRN.Settings.MaxEquipSlots.hint"),
         scope: "world",
@@ -9,7 +9,7 @@ export const registerSettings = () => {
         requiresReload: true,
     });
 
-    game.settings.register("cairn", "use-gold-threshold", {
+    game.settings.register("plerion", "use-gold-threshold", {
         name: game.i18n.localize("CAIRN.Settings.UseGoldThreshold.label"),
         hint: game.i18n.localize("CAIRN.Settings.UseGoldThreshold.hint"),
         scope: "world",
@@ -19,7 +19,7 @@ export const registerSettings = () => {
         requiresReload: true,
     });
 
-    game.settings.register("cairn", "use-panic", {
+    game.settings.register("plerion", "use-panic", {
         name: game.i18n.localize("CAIRN.Settings.UsePanic.label"),
         hint: game.i18n.localize("CAIRN.Settings.UsePanic.hint"),
         scope: "world",

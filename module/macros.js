@@ -5,7 +5,7 @@ import { evaluateFormula, getInfoFromDropData } from "./utils.js";
  * @param {Number} slot
  * @return {Promise.<void>}
  */
-export const createCairnMacro = async (data, slot) => {
+export const createPlerionMacro = async (data, slot) => {
   const { item, actor } = await getInfoFromDropData(data);
 
   if (data.type !== "Item") {
@@ -20,7 +20,7 @@ export const createCairnMacro = async (data, slot) => {
     return ui.notifications.warn("Macros only supported for weapons");
   }
 
-  const command = `game.cairn.rollItemMacro("${actor.id}", "${item.id}");`;
+  const command = `game.plerion.rollItemMacro("${actor.id}", "${item.id}");`;
   let macro = game.macros.find((m) => m.name === item.name && m.command === command);
   if (!macro) {
     macro = await Macro.create({
@@ -28,7 +28,7 @@ export const createCairnMacro = async (data, slot) => {
       type: "script",
       img: item.img,
       command,
-      flags: { "cairn.itemMacro": true },
+      flags: { "plerion.itemMacro": true },
     });
   }
   game.user.assignHotbarMacro(macro, slot);

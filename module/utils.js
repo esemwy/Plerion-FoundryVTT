@@ -28,7 +28,7 @@ export const formatString = (str, data = {}) => {
 /* V10/V9 compatibility */
 /**
  * @param {Object} dropData
- * @return {Promise<{actor: CairnActor, item: CairnItem}>}
+ * @return {Promise<{actor: PlerionActor, item: PlerionItem}>}
  */
 export const getInfoFromDropData = async (dropData) => {
   const itemFromUuid = dropData.uuid ? await fromUuid(dropData.uuid) : null;
