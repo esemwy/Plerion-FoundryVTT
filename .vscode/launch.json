@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Run Foundry with nodemon",
+        "type": "node",
+        "request": "launch",
+        "program": "${env:HOME}/FoundryVTT/program/resources/app/main.js",
+        "args": ["--dataPath=${env:HOME}/FoundryVTT/data"],
+        "runtimeExecutable": "nodemon",
+        "runtimeArgs": [
+          "--watch",
+          "${env:HOME}/Plerion-FoundryVTT",
+          "--ext",
+          "js,json,html,css",
+          "--exec",
+          "node"
+        ],
+        "restart": true,
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+  

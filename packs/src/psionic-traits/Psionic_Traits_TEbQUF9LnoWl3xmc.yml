@@ -1,0 +1,274 @@
+name: Psionic Traits
+_id: TEbQUF9LnoWl3xmc
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: e535tWP9fQkZJZNV
+    text: >-
+      **Astral Projection**: You project an astral boby without spatial
+      constraints. The consciousness is temporarily separated from the physical
+      body which remains defenseless. Cost: 1 WIL/10 minutes.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.e535tWP9fQkZJZNV'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: LFfiKtcjyUo3XNr0
+    text: >-
+      **Clairvoyance**: You can see events and locate things far away. Cost: 1
+      WIL/10 minutes.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.LFfiKtcjyUo3XNr0'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: wROQBjPYOKuuwgEB
+    text: >-
+      **Dreamwalking**: You can enter into another person's dreams. You need to
+      be asleep to do so. Cost 1d6 WIL/Night. 4. **Ergokinesis**: You can
+      influence the movement of energy. The conveyed energy can be used as blast
+      weapon. Cost: 1d6 WIL/use.
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.wROQBjPYOKuuwgEB'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: K0bqFK1N2swdedA6
+    text: '4'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.K0bqFK1N2swdedA6'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: PaYr9GgS04RuChei
+    text: '5'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.PaYr9GgS04RuChei'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: rTwAQlfm4ZRxDd0P
+    text: '6'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.rTwAQlfm4ZRxDd0P'
+  - type: text
+    weight: 1
+    range:
+      - 7
+      - 7
+    drawn: false
+    _id: yNlB1a3NaVJO5RGM
+    text: '7'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.yNlB1a3NaVJO5RGM'
+  - type: text
+    weight: 1
+    range:
+      - 8
+      - 8
+    drawn: false
+    _id: FG0mld1KTucoU8DZ
+    text: '8'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.FG0mld1KTucoU8DZ'
+  - type: text
+    weight: 1
+    range:
+      - 9
+      - 9
+    drawn: false
+    _id: 6dQGJceItszIMpdy
+    text: '9'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.6dQGJceItszIMpdy'
+  - type: text
+    weight: 1
+    range:
+      - 10
+      - 10
+    drawn: false
+    _id: ceyeKSWPzZjK4ByA
+    text: '10'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.ceyeKSWPzZjK4ByA'
+  - type: text
+    weight: 1
+    range:
+      - 11
+      - 11
+    drawn: false
+    _id: nQliSvXbWuRES0JC
+    text: '11'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.nQliSvXbWuRES0JC'
+  - type: text
+    weight: 1
+    range:
+      - 12
+      - 12
+    drawn: false
+    _id: 4ZiS7UliwAFTOb56
+    text: '12'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.4ZiS7UliwAFTOb56'
+  - type: text
+    weight: 1
+    range:
+      - 13
+      - 13
+    drawn: false
+    _id: 1yBJh2HpEngIioI5
+    text: '13'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.1yBJh2HpEngIioI5'
+  - type: text
+    weight: 1
+    range:
+      - 14
+      - 14
+    drawn: false
+    _id: bwYDWbL5Gu0DlKKM
+    text: '14'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.bwYDWbL5Gu0DlKKM'
+  - type: text
+    weight: 1
+    range:
+      - 15
+      - 15
+    drawn: false
+    _id: 7BJmQMkdcizFn8iQ
+    text: '15'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.7BJmQMkdcizFn8iQ'
+  - type: text
+    weight: 1
+    range:
+      - 16
+      - 16
+    drawn: false
+    _id: gEfmpKh6uMwElPMp
+    text: '16'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.gEfmpKh6uMwElPMp'
+  - type: text
+    weight: 1
+    range:
+      - 17
+      - 17
+    drawn: false
+    _id: vXtRqQnP2PcMhdd9
+    text: '17'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.vXtRqQnP2PcMhdd9'
+  - type: text
+    weight: 1
+    range:
+      - 18
+      - 18
+    drawn: false
+    _id: gX19Ap0D9kAG9euZ
+    text: '18'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.gX19Ap0D9kAG9euZ'
+  - type: text
+    weight: 1
+    range:
+      - 19
+      - 19
+    drawn: false
+    _id: 4ITbUjb1LYkcChyt
+    text: '19'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.4ITbUjb1LYkcChyt'
+  - type: text
+    weight: 1
+    range:
+      - 20
+      - 20
+    drawn: false
+    _id: AKVmlf21znBDcm6n
+    text: '20'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!TEbQUF9LnoWl3xmc.AKVmlf21znBDcm6n'
+replacement: true
+displayRoll: true
+folder: null
+sort: 0
+ownership:
+  default: 0
+  C4xC6ivvEydovVry: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: plerion
+  systemVersion: '0.01'
+  createdTime: 1740770948178
+  modifiedTime: 1740771247685
+  lastModifiedBy: C4xC6ivvEydovVry
+formula: 1d20
+_key: '!tables!TEbQUF9LnoWl3xmc'
+

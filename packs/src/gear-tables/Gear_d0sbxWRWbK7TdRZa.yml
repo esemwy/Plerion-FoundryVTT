@@ -1,0 +1,73 @@
+name: Gear
+_id: d0sbxWRWbK7TdRZa
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: xCpfrd31yrdVFd1x
+    text: '1'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!d0sbxWRWbK7TdRZa.xCpfrd31yrdVFd1x'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: C8LxTy4XitZvJGpY
+    text: '2'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!d0sbxWRWbK7TdRZa.C8LxTy4XitZvJGpY'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: 1cyqYzX89pwphTJI
+    text: '3'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!d0sbxWRWbK7TdRZa.1cyqYzX89pwphTJI'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: ixhL3loGbTovBiJW
+    text: '4'
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!d0sbxWRWbK7TdRZa.ixhL3loGbTovBiJW'
+replacement: true
+displayRoll: true
+folder: null
+sort: 0
+ownership:
+  default: 0
+  C4xC6ivvEydovVry: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: plerion
+  systemVersion: '0.01'
+  createdTime: 1740771574978
+  modifiedTime: 1740771609999
+  lastModifiedBy: C4xC6ivvEydovVry
+formula: 1d4
+_key: '!tables!d0sbxWRWbK7TdRZa'
+

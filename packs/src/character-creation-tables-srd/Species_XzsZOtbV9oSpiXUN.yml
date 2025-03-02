@@ -1,0 +1,97 @@
+name: Species
+_id: XzsZOtbV9oSpiXUN
+img: icons/svg/d20-grey.svg
+description: ''
+results:
+  - type: text
+    weight: 1
+    range:
+      - 1
+      - 1
+    drawn: false
+    _id: Idz447xZfH5sgEJj
+    text: Human
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!XzsZOtbV9oSpiXUN.Idz447xZfH5sgEJj'
+  - type: text
+    weight: 1
+    range:
+      - 2
+      - 2
+    drawn: false
+    _id: 2HFfUty1mpFppSpE
+    text: Human
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!XzsZOtbV9oSpiXUN.2HFfUty1mpFppSpE'
+  - type: text
+    weight: 1
+    range:
+      - 3
+      - 3
+    drawn: false
+    _id: EA1Mz4GprVAjKE9S
+    text: Human
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!XzsZOtbV9oSpiXUN.EA1Mz4GprVAjKE9S'
+  - type: text
+    weight: 1
+    range:
+      - 4
+      - 4
+    drawn: false
+    _id: Tqquo0MVN9XjvwcL
+    text: Human
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!XzsZOtbV9oSpiXUN.Tqquo0MVN9XjvwcL'
+  - type: text
+    weight: 1
+    range:
+      - 5
+      - 5
+    drawn: false
+    _id: I7m3Q9JNoB1V1mHV
+    text: Human
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!XzsZOtbV9oSpiXUN.I7m3Q9JNoB1V1mHV'
+  - type: text
+    weight: 1
+    range:
+      - 6
+      - 6
+    drawn: false
+    _id: 5ocAtg9XAKyTFtGs
+    text: Human
+    img: icons/svg/d20-black.svg
+    documentId: null
+    flags: {}
+    _key: '!tables.results!XzsZOtbV9oSpiXUN.5ocAtg9XAKyTFtGs'
+replacement: true
+displayRoll: true
+folder: null
+sort: 0
+ownership:
+  default: 0
+  C4xC6ivvEydovVry: 3
+flags: {}
+_stats:
+  compendiumSource: null
+  duplicateSource: null
+  coreVersion: '12.331'
+  systemId: plerion
+  systemVersion: '0.01'
+  createdTime: 1740771495985
+  modifiedTime: 1740771546213
+  lastModifiedBy: C4xC6ivvEydovVry
+formula: 1d6
+_key: '!tables!XzsZOtbV9oSpiXUN'
+
